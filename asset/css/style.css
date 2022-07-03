@@ -5,30 +5,48 @@
     Body Default Designed
 ---------------------------- */
 html,
-body{
-    font-family: 'Poppins',sans-serif;
+body {
+    font-family: 'Poppins', sans-serif;
 }
 
 /* ---------------------------
-            Star Designed
+        Star Designed
 ---------------------------- */
 
-.star-symbol:nth-child(even){
+.star-symbol:nth-child(even) {
+    animation: fade 1s infinite;
+    animation-delay: 3s;
     color: #F4263F;
+    opacity: 0;
 }
-.star-symbol:nth-child(odd){
+
+.star-symbol:nth-child(odd) {
+    animation: fade 1s infinite;
     color: #006A4D;
+    animation-delay: 1.5s;
+    opacity: 0;
+}
+
+@keyframes fade {
+
+    20%,
+    90% {
+        opacity: 1;
+    }
 }
 
 /* ---------------------------
     Grid Mobile Logo
 ---------------------------- */
-.mobile-image{
+.mobile-image {
     max-width: 200px;
 }
-.grid-box{
-    box-shadow: 0 8px 2px -2px #141414;
+
+.grid-box {
+    margin: 20px auto;
+    box-shadow: 5px 5px 8px -1px #14141425;
 }
-.grid-box > p{
+
+.grid-box>p {
     text-align: justify;
 }
