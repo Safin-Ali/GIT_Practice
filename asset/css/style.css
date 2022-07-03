@@ -6,6 +6,7 @@
 ---------------------------- */
 html,
 body {
+    background: #ECF0F3;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -39,12 +40,13 @@ body {
     Grid Mobile Logo
 ---------------------------- */
 .mobile-image {
+    box-shadow: 0px 0px 10px -1px #000000;
     max-width: 200px;
 }
 
 .grid-box {
     margin: 20px auto;
-    box-shadow: 5px 5px 8px -1px #14141425;
+    border: solid 2px #191a1985;
 }
 
 .grid-box>p {
